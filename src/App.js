@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import WeatherFetch from './components/fetch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Goal: Using Typescript, create a class component and a functional component.</h1>
+      <p>The class component should reach out to the geolocation API and grab coordiates</p>
+      <p>Then using those coordinates, reach oput to the open weather api and retrieve the weather information for your area.</p>
+      <p>Once you have the weather, it should be sent to the functional component to be displayed.</p>    
+    <WeatherFetch />
     </div>
   );
 }
